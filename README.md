@@ -27,7 +27,7 @@ memory: <value_mb>
 ```
 ### Don't forget to change variables in the host.ini file
 ```
-### Run playbook:
+### Run playbook
 ```
 ansible-playbook main_playbook.yml
 ```
@@ -35,3 +35,4 @@ ansible-playbook main_playbook.yml
 - ***keys\rsa4096_key*** is the ***ssh_key_generate.yml*** playbook's running example
 - example Proxmox Variables: ***proxmox/defaults/main.yml***
 - Kibana and Elastic repo replaced: ***deb [trusted=yes] https://mirror.yandex.ru/mirrors/elastic/7/ stable main***
+```
