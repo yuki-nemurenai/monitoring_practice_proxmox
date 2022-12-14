@@ -4,3 +4,4 @@
 
   roles:
     - cloudalchemy.prometheus
+    - geerlingguy.node_exporter

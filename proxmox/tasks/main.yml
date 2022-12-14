@@ -15,6 +15,7 @@
     storage: "{{ storage }}"
     memory: "{{ memory }}"
     netif: "{{ netif }}"
+    pubkey: "{{ lookup('file', '~/monitoring_practice_proxmox/keys/rsa4096_key.pub') }}"
 
 - name: Start container
   community.general.proxmox:
@@ -23,20 +24,5 @@
     api_password: "{{ api_password }}"
     api_host: "{{ api_host }}"
     state: started
-#- name: Wait 30 seconds
-#  wait_for:
-#    timeout: 30
-
-- name: Allow root login to new container
-  ansible.builtin.shell: pct exec {{vmid}} -- sed 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' -i /etc/ssh/sshd_config
-  register: status 
-  failed_when: "status.rc not in [0, 1]"
-- name: Restart sshd daemon 
-  ansible.builtin.shell: pct exec {{vmid}} -- systemctl restart sshd
-  register: restart
-  failed_when: "restart.rc not in [0, 1]"
-#- name: Wait 15 seconds
-#  wait_for:
-#    timeout: 15
 
 # tasks file for proxmox

@@ -1,0 +1,8 @@
+---
+- name: Generate an OpenSSH keypair
+  hosts: localhost
+
+  tasks:
+  - name: Generate an OpenSSH keypair
+    community.crypto.openssh_keypair:
+      path: ~/monitoring_practice_proxmox/keys/rsa4096_key 
