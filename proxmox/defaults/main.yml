@@ -2,9 +2,9 @@
 vmid: 718
 node: odin
 api_user: root@pam
-api_password: P@ssw0rd56
+api_password: 1t1Qm3@z^D&me4OUyrgI
 api_host: 192.168.0.54
-password: P@ssw0rd56
+password: 1t1Qm3@z^D&me4OUyrgI
 hostname: prometheus
 ostemplate: 'local:vztmpl/ubuntu-22.04-standard_22.04-1_amd64.tar.zst'
 description: created with ansible
