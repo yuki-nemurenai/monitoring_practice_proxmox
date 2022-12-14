@@ -1,0 +1,16 @@
+---
+vmid: 718
+node: odin
+api_user: root@pam
+api_password: P@ssw0rd56
+api_host: 192.168.0.54
+password: P@ssw0rd56
+hostname: prometheus
+ostemplate: 'local:vztmpl/ubuntu-22.04-standard_22.04-1_amd64.tar.zst'
+description: created with ansible
+netif: '{"net0":"name=eth0,gw=192.168.0.253,ip=192.168.10.150/20,bridge=vmbr0"}'
+storage: "odin_zfs_storage"
+disk: 20
+cores: 4
+memory: 4096
+# defaults file for proxmox

@@ -1,0 +1,6 @@
+---
+- name: Deploy monitoring stack
+  hosts: "monitoring"
+
+  roles:
+    - cloudalchemy.prometheus

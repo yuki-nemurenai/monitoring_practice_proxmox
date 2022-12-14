@@ -1,0 +1,2 @@
+- import_playbook: proxmox.yml
+- import_playbook: prometheus_stack.yml
