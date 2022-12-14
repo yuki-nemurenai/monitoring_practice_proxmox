@@ -1,5 +1,5 @@
 ---
-- name: "123"
+- name: "Deploy CT in the PxoxmoxVE Cluster with SSH keypair"
   hosts: "proxmox"
   
   pre_tasks:
